@@ -6,35 +6,6 @@ import React from "react";
 import './App.css'
 
 export const App = () => {
-//   return (
-//    <div>
-//      <NetflixSeries />
-//      <NetflixSeries />
-//      <NetflixSeries />
-//      <NetflixSeries />
-//      <NetflixSeries />
-//    </div>
-//   );
-
-// return (
-//     [
-//       <NetflixSeries key="1"/>,
-//       <NetflixSeries key="2"/>,
-//       <NetflixSeries key="3"/>,
-//       <NetflixSeries key="4"/>,
-//       <NetflixSeries key="5"/>
-//     ]
-//   );
-
-// return (
-//     <React.Fragment>
-//       <NetflixSeries />
-//       <NetflixSeries />
-//       <NetflixSeries />
-//       <NetflixSeries />
-//       <NetflixSeries />
-//    </React.Fragment>
-//   );
 
 return (
     <>
@@ -48,15 +19,26 @@ return (
 
 };
 
+// 1. Variables
+// You can embed any JavaScript variable within JSX by enclosing it in curly braces. The value of the variable will be inserted into the DOM at the respective location.
+
+// 2. Expression
+// JSX allows you to write JavaScript expressions inside curly braces. This includes operations, function calls, and other JavaScript expressions that produce a value.
+
 const NetflixSeries = () => {
+  const name = "Queen of Tears";
+  const summary = "A gripping tale of love, loss, and resilience set against the backdrop of a war-torn nation.";
+  const returnGenre = () => {
+    const genre = "RomCom";
+    return genre;
+  }
 return (
         <div>
         <img src="/images/qot.jpg" alt="qot" className='movie-img'></img>
-        <h2>Name : Queen of Tears</h2>
-        <h3>Rating:8.2</h3>
-        <p>
-        Summary: Baek Hyun-woo and Hong Hae-in navigate a tense.......
-        </p>
+        <h2>Name : {name} </h2>
+        <h3>Rating:{12/2+2.2}</h3>
+        <p>{summary}</p>
+        <p>Genre : {returnGenre()} </p>
         </div>
   );
 }
