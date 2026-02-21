@@ -7,6 +7,18 @@ import './App.css'
 
 export const App = () => {
   return (
+  <div>
+<NetflixSeries />
+<NetflixSeries />
+<NetflixSeries />
+<NetflixSeries />
+<NetflixSeries />
+  </div>
+  );
+};
+
+const NetflixSeries = () => {
+return (
         <div>
         <img src="/images/qot.jpg" alt="qot" className='movie-img'></img>
         <h2>Name : Queen of Tears</h2>
@@ -16,9 +28,5 @@ export const App = () => {
         </p>
         </div>
   );
-};
-
-const NetflixSeries = () => {
-
 }
 
