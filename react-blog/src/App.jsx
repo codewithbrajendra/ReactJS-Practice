@@ -6,15 +6,46 @@ import React from "react";
 import './App.css'
 
 export const App = () => {
-  return (
-  <div>
-<NetflixSeries />
-<NetflixSeries />
-<NetflixSeries />
-<NetflixSeries />
-<NetflixSeries />
-  </div>
+//   return (
+//    <div>
+//      <NetflixSeries />
+//      <NetflixSeries />
+//      <NetflixSeries />
+//      <NetflixSeries />
+//      <NetflixSeries />
+//    </div>
+//   );
+
+// return (
+//     [
+//       <NetflixSeries key="1"/>,
+//       <NetflixSeries key="2"/>,
+//       <NetflixSeries key="3"/>,
+//       <NetflixSeries key="4"/>,
+//       <NetflixSeries key="5"/>
+//     ]
+//   );
+
+// return (
+//     <React.Fragment>
+//       <NetflixSeries />
+//       <NetflixSeries />
+//       <NetflixSeries />
+//       <NetflixSeries />
+//       <NetflixSeries />
+//    </React.Fragment>
+//   );
+
+return (
+    <>
+      <NetflixSeries />
+      <NetflixSeries />
+      <NetflixSeries />
+      <NetflixSeries />
+      <NetflixSeries />
+   </>
   );
+
 };
 
 const NetflixSeries = () => {
