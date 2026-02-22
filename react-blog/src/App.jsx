@@ -25,6 +25,9 @@ return (
 // 2. Expression
 // JSX allows you to write JavaScript expressions inside curly braces. This includes operations, function calls, and other JavaScript expressions that produce a value.
 
+// 3. Function Calls
+// Functions, especially those that return JSX, can be invoked directly within your JSX...
+
 const NetflixSeries = () => {
   const name = "Queen of Tears";
   const summary = "A gripping tale of love, loss, and resilience set against the backdrop of a war-torn nation.";
