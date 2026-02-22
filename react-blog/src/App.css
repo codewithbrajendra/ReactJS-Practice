@@ -45,3 +45,8 @@
   width: 40%;
   height: auto;
 }
+
+.btn {
+  color: chocolate;
+  background-color: deepskyblue;
+}

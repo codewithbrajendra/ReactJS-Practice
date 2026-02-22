@@ -19,21 +19,19 @@ return (
 
 };
 
-// 1. Variables
-// You can embed any JavaScript variable within JSX by enclosing it in curly braces. The value of the variable will be inserted into the DOM at the respective location.
-
-// 2. Expression
-// JSX allows you to write JavaScript expressions inside curly braces. This includes operations, function calls, and other JavaScript expressions that produce a value.
-
-// 3. Function Calls
-// Functions, especially those that return JSX, can be invoked directly within your JSX...
-
 const NetflixSeries = () => {
   const name = "Queen of Tears";
   const summary = "A gripping tale of love, loss, and resilience set against the backdrop of a war-torn nation.";
+  let age = 19;
+  // 3. let canWatch = "Not Available";
+  // 3. if(age > 18) canWatch = "Watch Now";
   const returnGenre = () => {
     const genre = "RomCom";
     return genre;
+  }
+  const canWatch = () => {
+    if (age > 18) return "Watch Now";
+    return "Not Available"
   }
 return (
         <div>
@@ -42,6 +40,9 @@ return (
         <h3>Rating:{12/2+2.2}</h3>
         <p>{summary}</p>
         <p>Genre : {returnGenre()} </p>
+        {/* 2. <button className="btn"> {age > 18 ? "Watch Now" : "Not Available"} </button> */}
+        {/* 3. <button className="btn"> {canWatch} </button> */}
+        <button className="btn" > {canWatch()} </button>
         </div>
   );
 }
