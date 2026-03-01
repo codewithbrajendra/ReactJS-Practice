@@ -27,6 +27,9 @@ Named Import:
 When importing named exports, the import names must match the export names exactly.
 Named imports must be enclosed in curly braces.
 
+Mixed ImportExport:
+We can use mixed import export in same file. default export always should be one and Named export can be mutiple.
+
 ## Inline Styles
 
 Inline styles are applied directly to the HTML elements via the style attribute. This approach uses JavaScript objects to define the CSS properties and values.
