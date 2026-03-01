@@ -1,19 +1,13 @@
 
 import './App.css'
 
-import NetflixSeries, {Header, Footer} from "./components/NetflixSeries"
+import NetflixSeries from "./components/NetflixSeries"
 
 export const App = () => {
 
 return (
     <>
-      <Header/>
       <NetflixSeries />
-      <NetflixSeries />
-      <NetflixSeries />
-      <NetflixSeries />
-      <NetflixSeries />
-      <Footer/>
    </>
   );
 

@@ -50,3 +50,11 @@
   color: chocolate;
   background-color: deepskyblue;
 }
+
+ul {
+  display: grid;
+ /*  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); Responsive grid */
+ /* gap: 2rem;  Vertical and horizontal space between cards */
+  list-style: none;
+  padding: 1rem;
+}
